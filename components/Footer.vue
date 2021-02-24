@@ -8,29 +8,29 @@
           <div class="px-5"></div>
           <Instagram />
           <div class="px-5"></div>
-          <Twitter />
-          <div class="px-5"></div>
           <LinkedIn />
+          <div class="px-5"></div>
+          <Twitter />
         </div>
         <hr class="h-px m-6 bg-gray-700 border-none" />
         <div class="flex justify-center">
           <a
             class="github-button"
-            href="https://github.com/kenxdrgn/Face-Detection-And-Auto-Crop/fork"
+            href="https://github.com/kenxdrgn/lite-nuxt-portfolio-template/fork"
             data-icon="octicon-repo-forked"
             data-size="large"
             data-show-count="true"
-            aria-label="Fork kenxdrgn/Face-Detection-And-Auto-Crop on GitHub"
+            aria-label="Fork kenxdrgn/lite-nuxt-portfolio-template on GitHub"
             >Fork</a
           >
           <div class="px-6"></div>
           <a
             class="github-button"
-            href="https://github.com/kenxdrgn/Face-Detection-And-Auto-Crop"
+            href="https://github.com/kenxdrgn/lite-nuxt-portfolio-template"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star kenxdrgn/Face-Detection-And-Auto-Crop on GitHub"
+            aria-label="Star kenxdrgn/lite-nuxt-portfolio-template on GitHub"
             >Star</a
           >
         </div>
