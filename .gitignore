@@ -91,3 +91,5 @@ sw.*
 
 # .github
 .firebase
+firebase.json
+.firebaserc
