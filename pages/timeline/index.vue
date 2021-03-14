@@ -240,21 +240,27 @@
               </div>
             </div>
           </div>
-          <div class="font-bold text-center my-10">I was born 🤰🏼👶🏼</div>
+          <div class="font-bold text-center my-10" data-aos="fade-up">
+            I was born 🤰🏼👶🏼
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  head() {
+<script lang="ts">
+import Vue from 'vue'
+
+interface Title {
+  title: string
+}
+export default Vue.extend({
+  head(): Title {
     return {
       title: 'Timeline - Your_Name',
     }
   },
-}
+})
 </script>
-
 <style></style>

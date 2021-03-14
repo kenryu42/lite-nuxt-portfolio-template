@@ -11,9 +11,31 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
+<script lang="ts">
+import Vue from 'vue'
+
+interface Data {
+  swiperOption: {
+    slidesPerView: number
+    spaceBetween: number
+    loop: boolean
+    pagination: {
+      el: string
+      clickable: boolean
+    }
+    navigation: {
+      nextEl: string
+      prevEl: string
+    }
+  }
+}
+
+interface Title {
+  title: string
+}
+
+export default Vue.extend({
+  data(): Data {
     return {
       swiperOption: {
         slidesPerView: 1,
@@ -30,23 +52,23 @@ export default {
       },
     }
   },
-  head() {
+  head(): Title {
     return {
-      title: 'Project - Your_Name',
+      title: 'project - your_name',
     }
   },
   computed: {
-    swiper() {
+    swiper(): any {
       return this.$refs.mySwiper.$swiper
     },
-    slideIndex() {
+    slideIndex(): number {
       return this.$store.state.slide.index
     },
   },
   mounted() {
     this.swiper.slideTo(this.slideIndex, 1000, false)
   },
-}
+})
 </script>
 
 <style>

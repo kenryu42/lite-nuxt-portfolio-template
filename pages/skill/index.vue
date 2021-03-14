@@ -116,14 +116,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  head() {
+<script lang="ts">
+import Vue from 'vue'
+
+interface Title {
+  title: string
+}
+export default Vue.extend({
+  head(): Title {
     return {
       title: 'Skill - Your_Name',
     }
   },
-}
+})
 </script>
 
 <style></style>
