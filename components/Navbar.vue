@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="bg-gradient-to-r from-green-400 to-blue-500 sticky top-0 z-20 border-b-8 border-gray-900"
+    class="sticky top-0 z-20 border-b-8 border-gray-900 bg-gradient-to-r from-green-400 to-blue-500"
   >
     <div
-      class="px-4 py-2 lg:py-3 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-8"
+      class="max-w-xl px-4 py-2 mx-auto lg:py-3 md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-8"
     >
       <div class="relative flex items-center justify-between">
         <h1 class="ml-2 text-xl font-bold tracking-widest text-gray-900">
@@ -86,6 +86,8 @@
                 ? 'hamburger hamburger--minus is-active'
                 : 'hamburger hamburger--minus'
             "
+			aria-label="Menu"
+			title="Menu"
             type="button"
             @click="activeHamburger"
           >

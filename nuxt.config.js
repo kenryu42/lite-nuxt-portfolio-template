@@ -56,6 +56,12 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  pwa: {
+    meta: {
+      theme_color: '#f9fafb',
+    },
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   server: {
