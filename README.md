@@ -77,5 +77,17 @@ $ npm install
 $ npm run dev
 ```
 
-For i18n features, please refer to the [nuxt-i18n-portfolio-template](https://github.com/kenxdrgn/nuxt-i18n-portfolio-template).
+```bash
+# build for production and launch server
+$ npm run build
+$ npm run start
+```
 
+```bash
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+For i18n features, please refer to the [nuxt-i18n-portfolio-template](https://github.com/kenxdrgn/nuxt-i18n-portfolio-template).
