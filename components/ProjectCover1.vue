@@ -3,7 +3,7 @@
     to="/project"
     aria-label="Project 1"
     title="Project 1"
-    @click.native="gotoSlide(1)"
+    @click.native="toSlide(1)"
   >
     <div
       class="bg-cover bg-center h-96 max-w-6xl md:h-128 mx-5 my-5 md:mx-20 lg:mx-auto"
@@ -17,16 +17,12 @@
   </nuxt-link>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+import { toSlideMixin } from '~/mixins/toSlideMixin'
 
-export default Vue.extend({
-  methods: {
-    gotoSlide(index: number): void {
-      this.$store.commit('slide/goto', index)
-    },
-  },
-})
+export default {
+  mixins: [toSlideMixin],
+}
 </script>
 
 <style></style>
